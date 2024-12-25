@@ -1,9 +1,13 @@
 name = 'hosuto'
-main = 'src/app.tsx'
+main = 'src/app.ts'
 compatibility_date = '2024-12-24'
+minify = true
 
-assets = { directory = './public/' }
+[[kv_namespaces]]
+binding = 'KV'
+id = '<KV NAMESPACE ID>'
 
-kv_namespaces = [
-	{ binding = 'KV', id = '<KV NAMESPACE ID>' }
-]
+[vars]
+CLOUDFLARE_EMAIL = '<CLOUDFLARE ACCOUNT EMAIL>'
+CLOUDFLARE_API_KEY = '<CLOUDFLARE API KEY>'
+CLOUDFLARE_ACCOUNT_ID = '<CLOUDFLARE ACCOUNT ID>'
